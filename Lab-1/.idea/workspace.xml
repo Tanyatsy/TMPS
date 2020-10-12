@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d30bf163-4b21-40c5-8e19-ec1729576c74" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\Tatiana\Documents\AutomationXor\Repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../AutomationXor/Maven" />
+        <option name="userSettingsFile" value="C:\Users\Tatiana\Documents\AutomationXor\Maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1im1hsycAC6kXjZsievAMqyooY7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainApp" />
+      <module name="Lab-1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d30bf163-4b21-40c5-8e19-ec1729576c74" name="Default Changelist" comment="" />
+      <created>1602498075100</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602498075100</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1374" y="144" key="#xdebugger.evaluate" timestamp="1602511176003">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1374" y="144" key="#xdebugger.evaluate/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511176003" />
+    <state width="1877" height="373" key="GridCell.Tab.0.bottom" timestamp="1602511177057">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.0.bottom/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511177057" />
+    <state width="1877" height="373" key="GridCell.Tab.0.center" timestamp="1602511177057">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.0.center/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511177057" />
+    <state width="1877" height="373" key="GridCell.Tab.0.left" timestamp="1602511177057">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.0.left/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511177057" />
+    <state width="1877" height="373" key="GridCell.Tab.0.right" timestamp="1602511177057">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.0.right/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511177057" />
+    <state width="1877" height="373" key="GridCell.Tab.1.bottom" timestamp="1602510964461">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.1.bottom/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602510964461" />
+    <state width="1877" height="373" key="GridCell.Tab.1.center" timestamp="1602510964461">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.1.center/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602510964461" />
+    <state width="1877" height="373" key="GridCell.Tab.1.left" timestamp="1602510964461">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.1.left/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602510964461" />
+    <state width="1877" height="373" key="GridCell.Tab.1.right" timestamp="1602510964461">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.1.right/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602510964461" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/AbstractFactory/AbstractFactory.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

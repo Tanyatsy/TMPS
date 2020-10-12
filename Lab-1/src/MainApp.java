@@ -1,0 +1,84 @@
+import AbstractFactory.AbstractFactory;
+import Builder.Phone;
+import Builder.PhoneBuilder;
+import Factory.FactoryCreator;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+
+public class MainApp {
+    public static void main(String[] args) {
+        while (true) {
+            try {
+                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                System.out.println("\nEnter the new manufacturer(or the brand) of the desired phone ");
+                System.out.println("---> or press enter if you want to EXIT");
+                System.out.println("---> ");
+                String manufacturer = br.readLine();
+                if (manufacturer.length() == 0)
+                    break;
+                if(AbstractFactory.prototypes.isEmpty())
+                System.out.println("new prototype");
+                FactoryCreator creator = FactoryCreator.getInstance();
+                AbstractFactory phoneFactory = creator.getFactory(manufacturer.toLowerCase());
+                BackPanels[] possibleValuesBackPanel = BackPanels.values();
+                System.out.println("\nEnter the back panel material of your phone(for example: " + Arrays.toString(possibleValuesBackPanel) + ") ");
+                System.out.println("---> ");
+                String backPanel = br.readLine();
+                FrontPanels[] possibleValuesFrontPanel = FrontPanels.values();
+                System.out.println("\nEnter the front panel material of your phone(for example: " + Arrays.toString(possibleValuesFrontPanel) + ") ");
+                System.out.println("---> ");
+                String frontPanel = br.readLine();
+                System.out.println("\nEnter the os type of the phone: ");
+                System.out.println("---> ");
+                String osType = br.readLine();
+                while(phoneFactory.getBuilder(osType.toLowerCase()) == null) {
+                    System.out.println("enter one more time: ");
+                    osType = br.readLine();
+                }
+                System.out.println("\nEnter the camera resolution of the current phone: ");
+                System.out.println("---> ");
+                String resolution = br.readLine();
+
+
+
+
+
+                PhoneBuilder builder = phoneFactory.getBuilder(osType.toLowerCase());
+                builder.addFrontPanel(frontPanel);
+                builder.addBackPanel(backPanel);
+                builder.addManufacturer(manufacturer);
+                builder.addOsType(osType);
+                builder.addCamera(resolution);
+                AbstractFactory.prototype.put(manufacturer.toLowerCase(), builder.getPhone());
+                builder.getInfoAboutOsType();
+
+                System.out.println("\nDo you want create a prototype(Answer true or false)");
+                System.out.println("---> ");
+                boolean isYesToCreatePrototype = Boolean.parseBoolean(br.readLine());
+                if (isYesToCreatePrototype && AbstractFactory.prototype.size() != 0) {
+                    createPrototype(manufacturer,backPanel,frontPanel ,osType , resolution);
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private static void createPrototype(String manufacturer, String backPanel, String frontPanel, String osType, String resolution) {
+        Phone prototype = AbstractFactory.getPrototype(manufacturer.toLowerCase());
+        System.out.println("Prototype successfully created!");
+        prototype.setBackPanel(backPanel);
+        prototype.setFrontPanel(frontPanel);
+        prototype.setOsType(osType);
+        prototype.setCamera(resolution);
+        AbstractFactory.setNewPrototype(manufacturer.toLowerCase());
+        for (Phone phone : AbstractFactory.prototypes) {
+            System.out.println(phone.toString());
+        }
+    }
+}
+
