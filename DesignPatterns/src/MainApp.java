@@ -6,6 +6,7 @@ import Bridge.PhoneAccessories;
 import Bridge.Watches;
 import Builder.Phone;
 import Builder.PhoneBuilder;
+import Decorator.*;
 import Factory.FactoryCreator;
 import PhonePanels.BackPanels;
 import PhonePanels.FrontPanels;
@@ -95,6 +96,24 @@ public class MainApp {
                     if(fileAction.equalsIgnoreCase("print name")){
                         file.printName();
                     }
+                }
+
+                System.out.println("\nDo you want add some color of the  phone? please choose between:\n lavender\n black\n white");
+                System.out.println("---> ");
+                String phoneColor = br.readLine();
+                switch (phoneColor){
+                    case "lavender":
+                        IPhone lavenderPhone = new LavenderPhone(new SimplePhone());
+                        lavenderPhone.colorAssemble();
+                        break;
+                    case "white":
+                        IPhone whitePhone = new WhitePhone(new SimplePhone());
+                        whitePhone.colorAssemble();
+                        break;
+                    case"black":
+                        IPhone blackPhone = new BlackPhone(new SimplePhone());
+                        blackPhone.colorAssemble();
+                        break;
                 }
 
                 System.out.println("\nDo you want create a prototype(Answer true or false)");
