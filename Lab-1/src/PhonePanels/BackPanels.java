@@ -1,3 +1,5 @@
+package PhonePanels;
+
 public enum BackPanels {
     IRON("iron material"),
     ALUMINIUM("aluminum material"),

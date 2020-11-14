@@ -32,4 +32,6 @@ public abstract class PhoneBuilder {
     }
 
     public abstract String getInfoAboutOsType();
+    public abstract String buildPhone(String type, String osType);
+
 }

@@ -1,3 +1,5 @@
+package PhonePanels;
+
 public enum FrontPanels {
     GORILLAGLASS("Gorilla glass"),
     DRAGONTRAIL("Asahi Dragontrail glass"),
