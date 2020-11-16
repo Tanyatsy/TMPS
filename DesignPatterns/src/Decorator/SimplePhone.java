@@ -1,6 +1,5 @@
 package Decorator;
 
-import Builder.Phone;
 
 public class SimplePhone implements IPhone {
     @Override

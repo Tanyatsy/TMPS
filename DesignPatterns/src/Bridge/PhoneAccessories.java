@@ -3,6 +3,7 @@ package Bridge;
 public class PhoneAccessories extends Accessories{
     String nameOfWidget;
     String brand;
+
     public PhoneAccessories(String nameOfWidget, String brand, Widgets widgets) {
         super(widgets);
         this.nameOfWidget = nameOfWidget;

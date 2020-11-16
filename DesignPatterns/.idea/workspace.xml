@@ -2,38 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d30bf163-4b21-40c5-8e19-ec1729576c74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/AdvancedPhoneBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/BuilderAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/BuilderImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/PhoneWithButtonsBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/TabletPhoneBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Accessories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Headphones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/PhoneAccessories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Watches.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Widgets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Proxy/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Proxy/FileImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Proxy/ProxyFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignPatterns.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPatterns.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab-1/BackPanels.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab-1/Builder/AndroidBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-1/Builder/AndroidBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab-1/Builder/IOSBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-1/Builder/IOSBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab-1/Builder/PhoneBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-1/Builder/PhoneBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab-1/Builder/WindowsBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-1/Builder/WindowsBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab-1/FrontPanels.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab-1/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab-1/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BackPanels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhonePanels/BackPanels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Builder/AndroidBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/AndroidBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Builder/IOSBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/IOSBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Builder/PhoneBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/PhoneBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Builder/WindowsBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/WindowsBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FrontPanels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhonePanels/FrontPanels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,11 +109,24 @@
       <option name="presentableId" value="Default" />
       <updated>1602498075100</updated>
       <workItem from="1605371548742" duration="11210000" />
+      <workItem from="1605385629523" duration="436000" />
     </task>
+    <task id="LOCAL-00001" summary="added decorate prototype">
+      <created>1605385730019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605385730019</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added decorate prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="added decorate prototype" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1047" y="201" key="#Inspections" timestamp="1605375760034">
@@ -161,26 +146,30 @@
     </state>
     <state x="1374" y="144" key="#xdebugger.evaluate/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511176003" />
     <state x="1205" y="494" width="493" height="586" key="#xdebugger.evaluate/62.0.1858.1080@62.0.1858.1080" timestamp="1605373444386" />
-    <state width="883" height="295" key="GridCell.Tab.0.bottom" timestamp="1605381713145">
+    <state x="532" y="134" key="CommitChangelistDialog2" timestamp="1605385729581">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="532" y="134" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1605385729581" />
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1605386064915">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1877" height="373" key="GridCell.Tab.0.bottom/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511177057" />
-    <state width="883" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1605381713145" />
-    <state width="883" height="295" key="GridCell.Tab.0.center" timestamp="1605381713145">
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1605386064915" />
+    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1605386064915">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1877" height="373" key="GridCell.Tab.0.center/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511177057" />
-    <state width="883" height="295" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1605381713145" />
-    <state width="883" height="295" key="GridCell.Tab.0.left" timestamp="1605381713144">
+    <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1605386064915" />
+    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1605386064915">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1877" height="373" key="GridCell.Tab.0.left/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511177057" />
-    <state width="883" height="295" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1605381713144" />
-    <state width="883" height="295" key="GridCell.Tab.0.right" timestamp="1605381713145">
+    <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1605386064915" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1605386064915">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1877" height="373" key="GridCell.Tab.0.right/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511177057" />
-    <state width="883" height="295" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1605381713145" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1605386064915" />
     <state width="883" height="363" key="GridCell.Tab.1.bottom" timestamp="1605378768994">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -201,6 +190,10 @@
     </state>
     <state width="1877" height="373" key="GridCell.Tab.1.right/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602510964461" />
     <state width="883" height="363" key="GridCell.Tab.1.right/62.0.1858.1080@62.0.1858.1080" timestamp="1605378768993" />
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1605385731851">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1605385731851" />
     <state x="1264" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605372329080">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
