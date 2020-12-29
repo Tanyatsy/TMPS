@@ -9,6 +9,8 @@ import Builder.PhoneBuilder;
 import ChainofResponsibility.*;
 import Decorator.*;
 import Factory.FactoryCreator;
+import Iterator.Iterator;
+import Iterator.IteratorRepository;
 import PhonePanels.BackPanels;
 import PhonePanels.FrontPanels;
 import Proxy.File;
@@ -36,8 +38,17 @@ public class MainApp {
                 FactoryCreator creator = FactoryCreator.getInstance();
                 AbstractFactory phoneFactory = creator.getFactory(manufacturer.toLowerCase());
                 if(creator.isUnknown){
-                    System.out.println("\nEnter (apple,google,microsoft,lenovo) ");
-                    System.out.println("---> or press enter if you want to EXIT");
+                    String[] models = {"apple", "google", "lenovo", "microsoft"};
+                    IteratorRepository iteratorRepository = new IteratorRepository();
+
+                    System.out.println("\nEnter smt. from the following list: ");
+                    for(Iterator iterator = iteratorRepository.getIterator(models);
+                        iterator.hasNext();) {
+                        String employee = (String)iterator.next();
+                        System.out.println("" + employee);
+                    }
+
+                    System.out.println("\n ---> or press enter if you want to EXIT");
                     System.out.println("---> ");
                      manufacturer = br.readLine();
                     if (manufacturer.length() == 0)
@@ -45,6 +56,7 @@ public class MainApp {
                      creator = FactoryCreator.getInstance();
                      phoneFactory = creator.getFactory(manufacturer.toLowerCase());
                 }
+
                 if (AbstractFactory.prototypes.isEmpty())
                     System.out.println("new prototype");
 
