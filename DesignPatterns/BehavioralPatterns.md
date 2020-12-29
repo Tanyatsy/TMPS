@@ -25,6 +25,7 @@ and testing capabilities.
  So when we build a phone, each part has its own logic.
  
  Below you can see how the Chain of Responsibility pattern is implemented by classes:
+ 
  ![](/DesignPatterns/screenshots/Chain.png)
  
  I have implemented PhoneBuilderResponsibility.java class in order to prioritize all features of the phone implementation.
