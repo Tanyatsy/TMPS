@@ -11,6 +11,9 @@ import Decorator.*;
 import Factory.FactoryCreator;
 import Iterator.Iterator;
 import Iterator.IteratorRepository;
+import Observer.Client;
+import Observer.Manager;
+import Observer.Worker;
 import PhonePanels.BackPanels;
 import PhonePanels.FrontPanels;
 import Proxy.File;
@@ -27,6 +30,11 @@ public class MainApp {
         while (true) {
             try {
                 String manufacturer = "";
+                Phone phone = new Phone();
+                new Client(phone);
+                new Manager(phone);
+                new Worker(phone);
+
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                 System.out.println("\nEnter the new manufacturer(or the brand) of the desired phone ");
                 System.out.println("---> or press enter if you want to EXIT");
@@ -59,6 +67,8 @@ public class MainApp {
 
                 if (AbstractFactory.prototypes.isEmpty())
                     System.out.println("new prototype");
+
+                phone.setState("not ready");
 
                 BackPanels[] possibleValuesBackPanel = BackPanels.values();
                 System.out.println("\nEnter the back panel material of your phone(for example: " + Arrays.toString(possibleValuesBackPanel) + ") ");
@@ -101,6 +111,8 @@ public class MainApp {
                 builder.addCamera(resolution);
                 AbstractFactory.prototype.put(manufacturer.toLowerCase(), builder.getPhone());
                 System.out.println(builder.getInfoAboutOsType());
+
+                phone.setState("ready to test");
 
                 System.out.println("\nDo you want tablet phone or phone with buttons ?");
                 System.out.println("---> ");
@@ -155,6 +167,8 @@ public class MainApp {
                         blackPhone.colorAssemble();
                         break;
                 }
+
+                phone.setState("ready for sell");
 
                 System.out.println("\nDo you want create a prototype(Answer true or false)");
                 System.out.println("---> ");

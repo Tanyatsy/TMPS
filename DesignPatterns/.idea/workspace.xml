@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d30bf163-4b21-40c5-8e19-ec1729576c74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesignPatterns.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BehavioralPatterns.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Chain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Iterator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Lab3Output1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Lab3Output2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Observer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Worker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Builder/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +45,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -53,17 +63,21 @@
     </option>
   </component>
   <component name="ProjectId" id="1im1hsycAC6kXjZsievAMqyooY7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -71,6 +85,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tanya\Documents\University\TMPS\DesignPatterns\DesignPatterns" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -110,6 +129,8 @@
       <updated>1602498075100</updated>
       <workItem from="1605371548742" duration="11210000" />
       <workItem from="1605385629523" duration="436000" />
+      <workItem from="1607363140607" duration="854000" />
+      <workItem from="1609274777380" duration="5286000" />
     </task>
     <task id="LOCAL-00001" summary="added decorate prototype">
       <created>1605385730019</created>
@@ -125,6 +146,7 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added decorate prototype" />
     <option name="LAST_COMMIT_MESSAGE" value="added decorate prototype" />
   </component>
@@ -133,10 +155,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="1047" y="201" key="#Inspections/62.0.1858.1080@62.0.1858.1080" timestamp="1605375760034" />
-    <state x="1260" y="252" key="#com.intellij.ide.util.MemberChooser" timestamp="1605380585194">
+    <state x="1260" y="252" key="#com.intellij.ide.util.MemberChooser" timestamp="1609275862710">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="1260" y="252" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1605380585194" />
+    <state x="1260" y="252" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1609275862710" />
     <state x="839" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1605371563553">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -150,26 +172,26 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="532" y="134" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1605385729581" />
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1605386064915">
+    <state width="1815" height="852" key="GridCell.Tab.0.bottom" timestamp="1609281002015">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1877" height="373" key="GridCell.Tab.0.bottom/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511177057" />
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1605386064915" />
-    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1605386064915">
+    <state width="1815" height="852" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1609281002015" />
+    <state width="1815" height="852" key="GridCell.Tab.0.center" timestamp="1609281002015">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1877" height="373" key="GridCell.Tab.0.center/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511177057" />
-    <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1605386064915" />
-    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1605386064915">
+    <state width="1815" height="852" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1609281002015" />
+    <state width="1815" height="852" key="GridCell.Tab.0.left" timestamp="1609281002015">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1877" height="373" key="GridCell.Tab.0.left/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511177057" />
-    <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1605386064915" />
-    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1605386064915">
+    <state width="1815" height="852" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1609281002015" />
+    <state width="1815" height="852" key="GridCell.Tab.0.right" timestamp="1609281002015">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1877" height="373" key="GridCell.Tab.0.right/0.0.1920.1040/-949.-2160.2560.1400@0.0.1920.1040" timestamp="1602511177057" />
-    <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1605386064915" />
+    <state width="1815" height="852" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1609281002015" />
     <state width="883" height="363" key="GridCell.Tab.1.bottom" timestamp="1605378768994">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -194,10 +216,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1605385731851" />
-    <state x="1264" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605372329080">
+    <state x="1264" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609274809679">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="1264" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/62.0.1858.1080@62.0.1858.1080" timestamp="1605372329080" />
+    <state x="1264" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/62.0.1858.1080@62.0.1858.1080" timestamp="1609274809679" />
     <state x="1087" y="245" width="737" height="596" key="find.popup" timestamp="1605377807972">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

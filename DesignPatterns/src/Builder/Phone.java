@@ -1,12 +1,18 @@
 package Builder;
 
+import Observer.Observer;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Phone {
     private String frontPanel;
     private String backPanel;
     private String manufacturer;
     private String camera;
     private String osType;
-
+    private List<Observer> observers = new ArrayList<>();
+    private String state;
 
 
     public Phone clone() {
@@ -68,5 +74,23 @@ public class Phone {
         return sb.toString();
     }
 
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+        notifyObservers();
+    }
+
+    public void attach(Observer observer) {
+        observers.add(observer);
+    }
+
+    public void notifyObservers() {
+        for (Observer observer : observers) {
+            observer.update();
+        }
+    }
 
 }
