@@ -6,6 +6,7 @@ import Bridge.PhoneAccessories;
 import Bridge.Watches;
 import Builder.Phone;
 import Builder.PhoneBuilder;
+import ChainofResponsibility.*;
 import Decorator.*;
 import Factory.FactoryCreator;
 import PhonePanels.BackPanels;
@@ -16,24 +17,37 @@ import Proxy.ProxyFile;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.util.Arrays;
 
 public class MainApp {
     public static void main(String[] args) {
         while (true) {
             try {
+                String manufacturer = "";
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                 System.out.println("\nEnter the new manufacturer(or the brand) of the desired phone ");
                 System.out.println("---> or press enter if you want to EXIT");
                 System.out.println("---> ");
-                String manufacturer = br.readLine();
+                 manufacturer = br.readLine();
                 if (manufacturer.length() == 0)
                     break;
-                if (AbstractFactory.prototypes.isEmpty())
-                    System.out.println("new prototype");
 
                 FactoryCreator creator = FactoryCreator.getInstance();
                 AbstractFactory phoneFactory = creator.getFactory(manufacturer.toLowerCase());
+                if(creator.isUnknown){
+                    System.out.println("\nEnter (apple,google,microsoft,lenovo) ");
+                    System.out.println("---> or press enter if you want to EXIT");
+                    System.out.println("---> ");
+                     manufacturer = br.readLine();
+                    if (manufacturer.length() == 0)
+                        break;
+                     creator = FactoryCreator.getInstance();
+                     phoneFactory = creator.getFactory(manufacturer.toLowerCase());
+                }
+                if (AbstractFactory.prototypes.isEmpty())
+                    System.out.println("new prototype");
+
                 BackPanels[] possibleValuesBackPanel = BackPanels.values();
                 System.out.println("\nEnter the back panel material of your phone(for example: " + Arrays.toString(possibleValuesBackPanel) + ") ");
                 System.out.println("---> ");
@@ -52,6 +66,20 @@ public class MainApp {
                 System.out.println("\nEnter the camera resolution of the current phone: ");
                 System.out.println("---> ");
                 String resolution = br.readLine();
+
+                PhoneBuilderResponsibility phoneBuilderResponsibility = getChainOfPhoneComponents();
+                phoneBuilderResponsibility.buildPhone(PhoneBuilderResponsibility.MANUFACTURER, "manufacturer - " + manufacturer);
+                System.out.println();
+                phoneBuilderResponsibility.buildPhone(PhoneBuilderResponsibility.BACK_PANEL,"back panel - " + backPanel);
+                System.out.println();
+                phoneBuilderResponsibility.buildPhone(PhoneBuilderResponsibility.FRONT_PANEL, "front panel - " +frontPanel);
+                System.out.println();
+                phoneBuilderResponsibility.buildPhone(PhoneBuilderResponsibility.OS_TYPE,"os - " + osType);
+                System.out.println();
+                phoneBuilderResponsibility.buildPhone(PhoneBuilderResponsibility.CAMERA, "camera - " + resolution);
+                System.out.println();
+                phoneBuilderResponsibility.buildPhone(PhoneBuilderResponsibility.DRIVERS, "");
+                System.out.println();
 
                 PhoneBuilder builder = phoneFactory.getBuilder(osType.toLowerCase());
                 builder.addFrontPanel(frontPanel);
@@ -140,6 +168,24 @@ public class MainApp {
         for (Phone phone : AbstractFactory.prototypes) {
             System.out.println(phone.toString());
         }
+    }
+
+    private static PhoneBuilderResponsibility getChainOfPhoneComponents() {
+        PhoneBuilderResponsibility manufacturer = new Manufacturer(PhoneBuilderResponsibility.MANUFACTURER);
+        PhoneBuilderResponsibility backPanel = new BackPanel(PhoneBuilderResponsibility.BACK_PANEL);
+        PhoneBuilderResponsibility frontPanel = new FrontPanel(PhoneBuilderResponsibility.FRONT_PANEL);
+        PhoneBuilderResponsibility osType = new OSType(PhoneBuilderResponsibility.OS_TYPE);
+        PhoneBuilderResponsibility camera = new Camera(PhoneBuilderResponsibility.CAMERA);
+        PhoneBuilderResponsibility drivers = new Drivers(PhoneBuilderResponsibility.DRIVERS);
+
+
+        manufacturer.setNextPhoneBuilderResponsibility(backPanel);
+        backPanel.setNextPhoneBuilderResponsibility(frontPanel);
+        frontPanel.setNextPhoneBuilderResponsibility(osType);
+        osType.setNextPhoneBuilderResponsibility(camera);
+        camera.setNextPhoneBuilderResponsibility(drivers);
+
+        return manufacturer;
     }
 }
 

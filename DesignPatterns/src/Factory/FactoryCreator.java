@@ -5,6 +5,7 @@ import AbstractFactory.*;
 
 public class FactoryCreator {
     private static volatile FactoryCreator instance;
+    public boolean isUnknown = false;
 
     private FactoryCreator() {};
 
@@ -40,6 +41,7 @@ public class FactoryCreator {
                 break;
             default:
                 System.out.println("Unknown manufacturer entered!");
+                isUnknown = true;
                 break;
         }
         return factory;
